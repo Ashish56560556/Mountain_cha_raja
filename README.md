@@ -302,11 +302,11 @@
     let W = window.innerWidth, H = window.innerHeight;
     canvas.width = W; canvas.height = H;
     let confetti = [];
-    for(let i=0;i<20;i++){
+    for(let i=0;i<60;i++){
         confetti.push({
             x: Math.random()*W,
             y: Math.random()*H,
-            r: Math.random()*8+2,
+            r: Math.random()*8+4,
             d: Math.random()*W/2,
             color: ['#ffd54f','#ff7043','#ad1457','#fffbe8'][Math.floor(Math.random()*4)],
             tilt: Math.random()*10-5,
