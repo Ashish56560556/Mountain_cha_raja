@@ -296,49 +296,49 @@
         </div>
     </div>
     <script>
-    // // Simple confetti animation
-    // const canvas = document.querySelector('.confetti');
-    // const ctx = canvas.getContext('2d');
-    // let W = window.innerWidth, H = window.innerHeight;
-    // canvas.width = W; canvas.height = H;
-    // let confetti = [];
-    // for(let i=0;i<20;i++){
-    //     confetti.push({
-    //         x: Math.random()*W,
-    //         y: Math.random()*H,
-    //         r: Math.random()*8+2,
-    //         d: Math.random()*W/2,
-    //         color: ['#ffd54f','#ff7043','#ad1457','#fffbe8'][Math.floor(Math.random()*4)],
-    //         tilt: Math.random()*10-5,
-    //         tiltAngle: Math.random()*Math.PI*2
-    //     });
-    // }
-    // function drawConfetti(){
-    //     ctx.clearRect(0,0,W,H);
-    //     confetti.forEach(c=>{
-    //         ctx.beginPath();
-    //         ctx.arc(c.x, c.y, c.r, 0, Math.PI*2);
-    //         ctx.fillStyle = c.color;
-    //         ctx.fill();
-    //     });
-    //     updateConfetti();
-    // }
-    // // function updateConfetti(){
-    // //     confetti.forEach(c=>{
-    // //         c.y += Math.cos(c.d)+2+c.r/2;
-    // //         c.x += Math.sin(c.d);
-    // //         c.tiltAngle += 0.05;
-    // //         c.x += Math.sin(c.tiltAngle)*2;
-    // //         if(c.y > H){
-    // //             c.y = -10; c.x = Math.random()*W;
-    // //         }
-    // //     });
-    // // }
-    // // // setInterval(drawConfetti, 33);
-    // // // window.addEventListener('resize',()=>{
-    // // //     W = window.innerWidth; H = window.innerHeight;
-    // // //     canvas.width = W; canvas.height = H;
-    // // });
+    // Simple confetti animation
+    const canvas = document.querySelector('.confetti');
+    const ctx = canvas.getContext('2d');
+    let W = window.innerWidth, H = window.innerHeight;
+    canvas.width = W; canvas.height = H;
+    let confetti = [];
+    for(let i=0;i<20;i++){
+        confetti.push({
+            x: Math.random()*W,
+            y: Math.random()*H,
+            r: Math.random()*8+2,
+            d: Math.random()*W/2,
+            color: ['#ffd54f','#ff7043','#ad1457','#fffbe8'][Math.floor(Math.random()*4)],
+            tilt: Math.random()*10-5,
+            tiltAngle: Math.random()*Math.PI*2
+        });
+    }
+    function drawConfetti(){
+        ctx.clearRect(0,0,W,H);
+        confetti.forEach(c=>{
+            ctx.beginPath();
+            ctx.arc(c.x, c.y, c.r, 0, Math.PI*2);
+            ctx.fillStyle = c.color;
+            ctx.fill();
+        });
+        updateConfetti();
+    }
+    function updateConfetti(){
+        confetti.forEach(c=>{
+            c.y += Math.cos(c.d)+2+c.r/2;
+            c.x += Math.sin(c.d);
+            c.tiltAngle += 0.05;
+            c.x += Math.sin(c.tiltAngle)*2;
+            if(c.y > H){
+                c.y = -10; c.x = Math.random()*W;
+            }
+        });
+    }
+    setInterval(drawConfetti, 33);
+    window.addEventListener('resize',()=>{
+        W = window.innerWidth; H = window.innerHeight;
+        canvas.width = W; canvas.height = H;
+     });
     </script>
 </body>
 </html>
