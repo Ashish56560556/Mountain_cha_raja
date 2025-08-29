@@ -1,4 +1,4 @@
-# Nasarvaji.cha.raja.github.io
+_# Nasarvaji.cha.raja.github.io
 
 <!-- Responsive Festive Introduction Page -->
 
@@ -295,8 +295,8 @@
             </a>
         </div>
     </div>
-    <script>
-    // Simple confetti animation
+  <script>
+    // Simple confetti animation (slowed down)
     const canvas = document.querySelector('.confetti');
     const ctx = canvas.getContext('2d');
     let W = window.innerWidth, H = window.innerHeight;
@@ -324,11 +324,12 @@
         updateConfetti();
     }
     function updateConfetti(){
+        // Reduce movement speed for slow effect
         confetti.forEach(c=>{
-            c.y += Math.cos(c.d)+2+c.r/2;
-            c.x += Math.sin(c.d);
-            c.tiltAngle += 0.05;
-            c.x += Math.sin(c.tiltAngle)*2;
+            c.y += Math.cos(c.d)*0.3 + 0.6 + c.r/8; // slower vertical
+            c.x += Math.sin(c.d)*0.2; // slower horizontal
+            c.tiltAngle += 0.01;      // slower tilt
+            c.x += Math.sin(c.tiltAngle)*0.5; // slower wiggle
             if(c.y > H){
                 c.y = -10; c.x = Math.random()*W;
             }
@@ -338,7 +339,8 @@
     window.addEventListener('resize',()=>{
         W = window.innerWidth; H = window.innerHeight;
         canvas.width = W; canvas.height = H;
-     });
-    </script>
+    });
+</script>
 </body>
 </html>
+_
