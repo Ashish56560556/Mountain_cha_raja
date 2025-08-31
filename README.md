@@ -140,169 +140,164 @@
        alt="Ganpati"
        class="ganpati">
 
-  <p>🌄 Welcome to our vibrant community! 🌄</p>
+  
 
   <h2 class="section-title">✨ Glimpse of Festive Years ✨</h2>
-  <div class="gallery">
-    <div class="item">
-      <a href="#" onclick="openGalleryModal(); return false;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="">
-      </a>
-      <div class="caption">Ganpati Celebration 2024 🎈</div>
+<div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: stretch;">
+    <div class="item" style="flex: 1 1 250px; max-width: 350px; display: flex; flex-direction: column;">
+        <a href="#" onclick="openGalleryModal(); return false;">
+            <img src="https://i.postimg.cc/jSgd0b2c/Whats-App-Image-2025-08-30-at-3-23-41-PM-1.jpg" alt="">
+        </a>
+        <div class="caption">Ganpati Celebration 2024 🎈</div>
     </div>
     <!-- Gallery Modal -->
     <div id="galleryModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center;">
-      <span onclick="closeGalleryModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
-      <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/JhF9d7yy/IMG-20250827-194948.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <!-- Add more images as needed -->
-      </div>
+        <span onclick="closeGalleryModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
+        <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center; overflow-y:auto; position:relative;">
+            <button onclick="scrollGallery(-1)" style="position:absolute;left:-50px;top:50%;transform:translateY(-50%);background:#ffd54f;color:#ad1457;border:none;border-radius:50%;width:40px;height:40px;font-size:2em;cursor:pointer;z-index:1;">&#8593;</button>
+            <div id="galleryImages" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
+                <img src="https://i.postimg.cc/9fDXcnqh/Whats-App-Image-2025-08-30-at-3-23-52-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/TwmRD59N/Whats-App-Image-2025-08-30-at-3-23-55-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/8Cxpcmhr/Whats-App-Image-2025-08-30-at-3-23-57-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/cCB0DqPQ/Whats-App-Image-2025-08-30-at-3-24-03-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/ry1VyWzK/Whats-App-Image-2025-08-30-at-3-24-06-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/8PT175rw/Whats-App-Image-2025-08-30-at-3-24-09-PM-1.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/02Z9DsYv/Whats-App-Image-2025-08-30-at-3-24-12-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/K8zx5HfM/Whats-App-Image-2025-08-30-at-3-24-16-PM.jpg" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <!-- Add more images as needed -->
+            </div>
+            <button onclick="scrollGallery(1)" style="position:absolute;right:-50px;top:50%;transform:translateY(-50%);background:#ffd54f;color:#ad1457;border:none;border-radius:50%;width:40px;height:40px;font-size:2em;cursor:pointer;z-index:1;">&#8595;</button>
+        </div>
+        <script>
+            function scrollGallery(dir) {
+                const container = document.querySelector('#galleryModal > div > #galleryImages').parentElement;
+                container.scrollBy({ top: dir * 200, behavior: 'smooth' });
+            }
+        </script>
     </div>
     <script>
-      function openGalleryModal() {
-        document.getElementById('galleryModal').style.display = 'flex';
-      }
-      function closeGalleryModal() {
-        document.getElementById('galleryModal').style.display = 'none';
-      }
+        function openGalleryModal() {
+            document.getElementById('galleryModal').style.display = 'flex';
+        }
+        function closeGalleryModal() {
+            document.getElementById('galleryModal').style.display = 'none';
+        }
     </script>
-    <div class="item">
-      <a href="#" onclick="openLogoModal(); return false;">
-        <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="">
-      </a>
-      <div class="caption">Mountain group</div>
+    <div class="item" style="flex: 1 1 250px; max-width: 350px; display: flex; flex-direction: column;">
+        <a href="#" onclick="openLogoModal(); return false;">
+            <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="">
+        </a>
+        <div class="caption">Mountain group</div>
     </div>
     <!-- Logo Modal -->
     <div id="logoModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center;">
-      <span onclick="closeLogoModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
-      <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
-        <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <!-- Add more logo images as needed -->
-      </div>
+        <span onclick="closeLogoModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
+        <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center; overflow-y:auto; position:relative;">
+            <button onclick="scrollLogoGallery(-1)" style="position:absolute;left:-50px;top:50%;transform:translateY(-50%);background:#ffd54f;color:#ad1457;border:none;border-radius:50%;width:40px;height:40px;font-size:2em;cursor:pointer;z-index:1;">&#8593;</button>
+            <div id="logoGalleryImages" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <img src="https://i.postimg.cc/hGQCvLjj/mountain-group-logo.png" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+                <!-- Add more logo images as needed -->
+            </div>
+            <button onclick="scrollLogoGallery(1)" style="position:absolute;right:-50px;top:50%;transform:translateY(-50%);background:#ffd54f;color:#ad1457;border:none;border-radius:50%;width:40px;height:40px;font-size:2em;cursor:pointer;z-index:1;">&#8595;</button>
+        </div>
+        <script>
+            function scrollLogoGallery(dir) {
+                const container = document.querySelector('#logoModal > div > #logoGalleryImages').parentElement;
+                container.scrollBy({ top: dir * 200, behavior: 'smooth' });
+            }
+        </script>
     </div>
     <script>
-      function openLogoModal() {
-        document.getElementById('logoModal').style.display = 'flex';
-      }
-      function closeLogoModal() {
-        document.getElementById('logoModal').style.display = 'none';
-      }
+        function openLogoModal() {
+            document.getElementById('logoModal').style.display = 'flex';
+        }
+        function closeLogoModal() {
+            document.getElementById('logoModal').style.display = 'none';
+        }
     </script>
-    <div class="item">
-      <a href="#" onclick="openMountainModal(); return false;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
-      </a>
-      <div class="caption">Mountain🏔️</div>
+    <div class="item" style="flex: 1 1 250px; max-width: 350px; display: flex; flex-direction: column;">
+        <a href="#" onclick="openMountainModal(); return false;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
+        </a>
+        <div class="caption">Mountain🏔️</div>
     </div>
     <!-- Mountain Modal -->
     <div id="mountainModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center;">
-      <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
-      <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <!-- Add more mountain images as needed -->
-      </div>
+        <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
+        <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <!-- Add more mountain images as needed -->
+        </div>
     </div>
     <script>
-      function openMountainModal() {
-        document.getElementById('mountainModal').style.display = 'flex';
-      }
-      function closeMountainModal() {
-        document.getElementById('mountainModal').style.display = 'none';
-      }
+        function openMountainModal() {
+            document.getElementById('mountainModal').style.display = 'flex';
+        }
+        function closeMountainModal() {
+            document.getElementById('mountainModal').style.display = 'none';
+        }
     </script>
-    <div class="item">
-      <a href="#" onclick="openMountainModal(); return false;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
-      </a>
-      <div class="caption">Mountain🏔️</div>
+    <div class="item" style="flex: 1 1 250px; max-width: 350px; display: flex; flex-direction: column;">
+        <a href="#" onclick="openMountainModal(); return false;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
+        </a>
+        <div class="caption">Mountain🏔️</div>
     </div>
     <!-- Mountain Modal -->
     <div id="mountainModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center;">
-      <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
-      <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <!-- Add more mountain images as needed -->
-      </div>
+        <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
+        <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <!-- Add more mountain images as needed -->
+        </div>
     </div>
     <script>
-      function openMountainModal() {
-        document.getElementById('mountainModal').style.display = 'flex';
-      }
-      function closeMountainModal() {
-        document.getElementById('mountainModal').style.display = 'none';
-      }
+        function openMountainModal() {
+            document.getElementById('mountainModal').style.display = 'flex';
+        }
+        function closeMountainModal() {
+            document.getElementById('mountainModal').style.display = 'none';
+        }
     </script>
-    <div class="item">
-      <a href="#" onclick="openMountainModal(); return false;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
-      </a>
-      <div class="caption">Mountain🏔️</div>
+    <div class="item" style="flex: 1 1 250px; max-width: 350px; display: flex; flex-direction: column;">
+        <a href="#" onclick="openMountainModal(); return false;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
+        </a>
+        <div class="caption">Mountain🏔️</div>
     </div>
     <!-- Mountain Modal -->
     <div id="mountainModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center;">
-      <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
-      <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <!-- Add more mountain images as needed -->
-      </div>
+        <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
+        <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
+            <!-- Add more mountain images as needed -->
+        </div>
     </div>
     <script>
-      function openMountainModal() {
-        document.getElementById('mountainModal').style.display = 'flex';
-      }
-      function closeMountainModal() {
-        document.getElementById('mountainModal').style.display = 'none';
-      }
+        function openMountainModal() {
+            document.getElementById('mountainModal').style.display = 'flex';
+        }
+        function closeMountainModal() {
+            document.getElementById('mountainModal').style.display = 'none';
+        }
     </script>
-    <div class="item">
-      <a href="#" onclick="openMountainModal(); return false;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="">
-      </a>
-      <div class="caption">Mountain🏔️</div>
-    </div>
-    <!-- Mountain Modal -->
-    <div id="mountainModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center;">
-      <span onclick="closeMountainModal()" style="position:absolute;top:30px;right:40px;font-size:2em;color:#ffd54f;cursor:pointer;">&times;</span>
-      <div style="max-width:90vw;max-height:80vh;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:center;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="" style="max-width:350px;max-height:350px;border-radius:12px;">
-        <!-- Add more mountain images as needed -->
-      </div>
-    </div>
-    <script>
-      function openMountainModal() {
-        document.getElementById('mountainModal').style.display = 'flex';
-      }
-      function closeMountainModal() {
-        document.getElementById('mountainModal').style.display = 'none';
-      }
-    </script>
-  </div>
+</div>
 
   <div class="cta">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdl2KTyULymW6zRVk4Xv-ox8Sfe1R9bea6HzHxeh9FsABjt3g/viewform?usp=header" target="_blank">
